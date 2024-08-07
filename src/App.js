@@ -11,6 +11,8 @@ import CartPage from './pages/CartPage';
 import './styles/index.css';
 
 import HomePage from './pages/HomePage';
+// import Layout from './components/Layout';
+import ContactUs from './pages/Contactus';
 
 const App = () => {
   return (
@@ -21,11 +23,15 @@ const App = () => {
       <Router>
         <Navbar />
         <Routes>
+        
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/products" element={<Products />} />
           <Route path="/cart" element={<CartPage />} />
+          <Route path="/contactUs" element={<ContactUs/>}/>
           <Route path="/home" element={<HomePage />} />
+          
+      
         </Routes>
       </Router>
     </Provider>

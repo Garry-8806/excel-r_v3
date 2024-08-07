@@ -60,4 +60,17 @@
     font-size: 14px;
     margin-bottom: 15px;
   }
+
+  .register-image{
+    width: 300px;
+  }
   
+  /* Footer styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+}

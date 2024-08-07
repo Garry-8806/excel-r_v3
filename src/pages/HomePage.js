@@ -1,5 +1,7 @@
+// HomePage.js
 import React, { useState, useEffect } from 'react';
 import './HomePage.css';
+import Footer from '../components/Footer';
 
 const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -19,7 +21,7 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-       <div className="search-container">
+      <div className="search-container">
         <input type="text" className="search-input" placeholder="Search products..." />
         <button className="search-icon">🔍</button>
       </div>
@@ -67,24 +69,16 @@ const HomePage = () => {
             <h3>Phone 2</h3>
             <p>Description of phone deal 2.</p>
           </div>
-
           <div className="card">
             <img src="deal-phone2.jpg" alt="Phone Deal 2" />
             <h3>Phone 2</h3>
             <p>Description of phone deal 2.</p>
           </div>
-
           <div className="card">
             <img src="deal-phone2.jpg" alt="Phone Deal 2" />
             <h3>Phone 2</h3>
             <p>Description of phone deal 2.</p>
-          </div>
-
-          <div className="card">
-            <img src="deal-phone2.jpg" alt="Phone Deal 2" />
-            <h3>Phone 2</h3>
-            <p>Description of phone deal 2.</p>
-          </div>
+          </div>  
         </div>
       </div>
 
@@ -97,26 +91,24 @@ const HomePage = () => {
             <p>Description of shoe 1.</p>
           </div>
           <div className="card">
-            <img src="shoes3.jpg" alt="Shoe 2" />
+            <img src="shoes2.jpg" alt="Shoe 2" />
             <h3>Shoe 2</h3>
             <p>Description of shoe 2.</p>
           </div>
           <div className="card">
-            <img src="shoes3.jpg" alt="Shoe 2" />
+            <img src="shoes2.jpg" alt="Shoe 2" />
             <h3>Shoe 2</h3>
             <p>Description of shoe 2.</p>
           </div>
           <div className="card">
-            <img src="shoes3.jpg" alt="Shoe 2" />
+            <img src="shoes2.jpg" alt="Shoe 2" />
             <h3>Shoe 2</h3>
             <p>Description of shoe 2.</p>
           </div>
         </div>
       </div>
 
-      <footer className="footer">
-        <p>&copy; 2024 Shopaholic Haven. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 };

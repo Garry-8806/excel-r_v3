@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { login } from '../actions/authActions';
 import { Link } from 'react-router-dom'; // Import Link for navigation
 import '../styles/LoginForm.css'; // Ensure the path to CSS file is correct
+import Footer from '../components/Footer';
+
 
 
 const LoginPage = ({ history }) => {
@@ -14,7 +16,7 @@ const LoginPage = ({ history }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(login(email, password));
-    history.push('/home');
+    // history.push('');
   };
 
   return (
@@ -44,9 +46,10 @@ const LoginPage = ({ history }) => {
           Don’t have an account? <Link to="/register">Register here</Link>
         </p>
       </form>
-      <footer>
-        <p>© 2024 E-Commerce. All rights reserved.</p>
-      </footer>
+        <footer>
+          <p>© 2024 E-Commerce. All rights reserved.</p>
+        </footer>
+      <Footer/>
     </div>
   );
 };
