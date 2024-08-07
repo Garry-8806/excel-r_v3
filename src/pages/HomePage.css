@@ -1,0 +1,186 @@
+.home-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #45a049;
+  }
+  
+  .latest-offers, .best-products, .latest-deals, .shoes-category {
+    margin: 20px 0;
+  }
+  
+  .slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .card {
+    background-color: #f8f8f8;
+    border: 10px solid #ddd;
+
+    width: 300px;
+    margin: 10px;
+    padding: 0px;
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .card p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .footer {
+    text-align: center;
+    color: #ddd;
+    padding: 10px;
+    background-color: #1a1919;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Search Box Styles */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+  }
+  
+ /* Search Box Styles */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .search-input {
+    padding: 12px 20px 12px 40px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .search-input:focus {
+    width: 500px;
+    border-color: #4CAF50;
+  }
+  
+  .search-icon {
+    top: 30%;
+    transform: translateY(-10%);
+    font-size: 40px;
+    color: #ccc;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  /* Slider Container */
+.slider {
+    position: relative;
+    width: 200%;
+    max-width: 800px; /* Adjust as needed */
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Slides Wrapper */
+  .slides {
+    display: flex;
+    width: 300%;
+    animation: slide 15s infinite;
+  }
+  
+  /* Individual Slide */
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
+  /* Slider Image */
+  .slider-image {
+    width: 100%; /* Adjust as needed */
+    height: 500px; /* Set the desired height */
+    object-fit: cover; /* Ensure images cover the area */
+  }
+  
+  /* Keyframes for Sliding Effect */
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    33% {
+      transform: translateX(-100%);
+    }
+    66% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
